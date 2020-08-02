@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from "react";
 import { GlobalContext } from "../contextapi/GlobalState";
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import { Link, useHistory } from "react-router-dom";
-import { v4 as uuid } from "uuid";
 
 export default function Edit(props) {
   const [selectedUser, setSelectedUser] = useState({
@@ -41,7 +40,7 @@ export default function Edit(props) {
             type="value"
             placeholder=" Enter Name"
             name="name"
-            defaultValue={selectedUser.name}
+            value={selectedUser.name}
             onChange={onchange}
           >
             {" "}

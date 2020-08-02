@@ -6,7 +6,7 @@ import Edit from "./components/Edit";
 import AddUser from "./components/AddUser";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { GlobalProvider } from "./contextapi/GlobalState";
-import Todos from "./Todos";
+
 
 function App() {
   return (
